@@ -12,6 +12,6 @@ jobs:
           python-version: '3.12'
       - name: Instalar dependencias
         run: |
-          pip install psycopg2-binary
-      - name: Ejecutar Test de Conexión
-        run: python check_env.py
+          pip install pandas requests
+      - name: Ejecutar pipeline
+        run: python pipeline.py
